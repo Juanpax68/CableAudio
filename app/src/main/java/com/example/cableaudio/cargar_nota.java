@@ -1,4 +1,4 @@
-package com.example.cableaudio;
+package com.example.cabaudio;
 
 import android.os.Bundle;
 

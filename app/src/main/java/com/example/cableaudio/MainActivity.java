@@ -1,4 +1,4 @@
-package com.example.cableaudio;
+package com.example.cabaudio;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,19 +12,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class olvido_contra extends AppCompatActivity {
-private TextView t1,t2;
-private Button bo1,bo2;
+public class MainActivity extends AppCompatActivity {
+private TextView tex1,tex2,tex3,tex4,tex5,tex6;
+private Button btn1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_olvido_contra);
+        setContentView(R.layout.activity_main);
 
-        t1 = findViewById(R.id.correo_elec);
-        t2 = findViewById(R.id.mensaje_mo);
-        bo1 = findViewById(R.id.restablecer_contra);
-        bo2 = findViewById(R.id.volver_rr);
+        tex1 = findViewById(R.id.inicio);
+        tex2 = findViewById(R.id.nombre);
+        tex3 = findViewById(R.id.contra);
+        tex4 = findViewById(R.id.cuenta);
+        tex5 = findViewById(R.id.registro);
+        tex6 = findViewById(R.id.olvidar);
+        btn1 = findViewById(R.id.ingreso);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -32,8 +35,12 @@ private Button bo1,bo2;
             return insets;
         });
     }
-    public void volve(View view){
-        Intent vol = new Intent(this, MainActivity.class);
-        startActivity(vol);
+    public void nuevo(View view){
+        Intent nuevoo = new Intent(this, nuevo_user.class);
+        startActivity(nuevoo);
+    }
+    public void contra(View view){
+        Intent contraaa = new Intent(this, olvido_contra.class);
+        startActivity(contraaa);
     }
 }
