@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="504dp"
         android:text="Todavia no tenes cuenta?"
-        android:textColor="@color/white"
+        android:textColor="#00FB0B"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,10 +113,30 @@
         android:layout_marginTop="632dp"
         android:onClick="contra"
         android:text="Olvidaste tu Contraseña?"
-        android:textColor="#FBF8F8"
+        android:textColor="#E80000"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="91dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/ii"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="180dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="188dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
